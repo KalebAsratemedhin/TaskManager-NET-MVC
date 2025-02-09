@@ -1,1 +1,36 @@
-GET http://localhost:5240
+GET http://localhost:5240/games
+
+####
+GET http://localhost:5240/games/2
+
+####
+
+GET http://localhost:5240/games/5
+
+####
+
+POST http://localhost:5240/games
+Content-Type: application/json
+
+{
+    "name": "Lara Croft",
+    "genre": "Exploration",
+    "price": 33.99,
+    "releaseDate": "2015-01-27"
+}
+
+####
+
+PUT http://localhost:5240/games/2
+Content-Type: application/json
+
+{
+    "name": "Avengers Endgame",
+    "genre": "Superpowers",
+    "price": 12.89,
+    "releaseDate": "2012-09-27"
+}
+
+###
+
+DELETE http://localhost:5240/games/4
